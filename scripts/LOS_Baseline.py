@@ -3,7 +3,7 @@ Author: Nathan Marks
 Date: 4/24/20
 This is a pretty simple linear regression model predicting the length of stay of individuals
 in TEDS-D.
-Dependencies: tedsd_puf_2017-training.csv, tedsd_puf_2017-testing.csv, TEDS-D_Features.csv
+Dependencies: tedsd_puf_2017-training.csv, tedsd_puf_2017-testing.csv, TEDS-D_LOS_Features.csv
 """
 
 import pandas as pd
@@ -17,7 +17,7 @@ teds_testing = pd.read_csv('tedsd_puf_2017-testing.csv')
 #print (str(teds.head()))
 
 print ('getting feature labels')
-featureLables = list(pd.read_csv('TEDS-D_Features.csv', delimiter=','))
+featureLables = list(pd.read_csv('TEDS-D_LOS_Features.csv', delimiter=','))
 #print (str(featureLables))
 
 #Length of Stay
